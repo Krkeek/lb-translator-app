@@ -1,0 +1,33 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ feature/**, bugfix/**, hotfix/** ]
+
+jobs:
+  build-test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: 🔄 Restore dependencies
+        run: dotnet restore
+
+      - name: 🛠 Build solution
+        run: dotnet build --no-restore --warnaserror
+
+      - name: ✅ Run tests
+        run: dotnet test --no-build --verbosity normal
+
+      - name: 🔍 Check formatting
+        run: dotnet format --verify-no-changes
