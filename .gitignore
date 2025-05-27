@@ -2,6 +2,12 @@
 bin/
 obj/
 
+# Generated files
+*.AssemblyInfo.cs
+*.cache
+*.g.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+
 ## Rider
 .idea/
 
@@ -17,7 +23,6 @@ obj/
 
 ## Other
 *.log
-*.cache
 *.db
 *.pdb
 *.nupkg
