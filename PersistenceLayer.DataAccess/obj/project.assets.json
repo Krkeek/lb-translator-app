@@ -1,0 +1,181 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Common.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "Common.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Common.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Contracts.dll": {}
+        }
+      },
+      "Common.Features/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.Features.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Features.dll": {}
+        }
+      },
+      "Common.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Interface.dll": {}
+        }
+      },
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
+    "Common.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Common.Contracts/Common.Contracts.csproj",
+      "msbuildProject": "../Common.Contracts/Common.Contracts.csproj"
+    },
+    "Common.Features/1.0.0": {
+      "type": "project",
+      "path": "../Common.Features/Common.Features.csproj",
+      "msbuildProject": "../Common.Features/Common.Features.csproj"
+    },
+    "Common.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Common.Interface/Common.Interface.csproj",
+      "msbuildProject": "../Common.Interface/Common.Interface.csproj"
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../Common.Logging/Common.Logging.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Common >= 1.0.0",
+      "Common.Contracts >= 1.0.0",
+      "Common.Features >= 1.0.0",
+      "Common.Interface >= 1.0.0",
+      "Common.Logging >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ahmadhiazi/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ahmadhiazi/RiderProjects/lb-translator/PersistenceLayer.DataAccess/PersistenceLayer.DataAccess.csproj",
+      "projectName": "PersistenceLayer.DataAccess",
+      "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/PersistenceLayer.DataAccess/PersistenceLayer.DataAccess.csproj",
+      "packagesPath": "/Users/ahmadhiazi/.nuget/packages/",
+      "outputPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/PersistenceLayer.DataAccess/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ahmadhiazi/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Contracts/Common.Contracts.csproj": {
+              "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Contracts/Common.Contracts.csproj"
+            },
+            "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Features/Common.Features.csproj": {
+              "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Features/Common.Features.csproj"
+            },
+            "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Interface/Common.Interface.csproj": {
+              "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Interface/Common.Interface.csproj"
+            },
+            "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Logging/Common.Logging.csproj": {
+              "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common.Logging/Common.Logging.csproj"
+            },
+            "/Users/ahmadhiazi/RiderProjects/lb-translator/Common/Common.csproj": {
+              "projectPath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common/Common.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
