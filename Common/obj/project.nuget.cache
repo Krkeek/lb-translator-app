@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+2tgvoCDd+E=",
+  "dgSpecHash": "QYmXiHWKV4w=",
   "success": true,
   "projectFilePath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Common/Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ahmadhiazi/.nuget/packages/stylecop.analyzers/1.2.0-beta.556/stylecop.analyzers.1.2.0-beta.556.nupkg.sha512",
+    "/Users/ahmadhiazi/.nuget/packages/stylecop.analyzers.unstable/1.2.0.556/stylecop.analyzers.unstable.1.2.0.556.nupkg.sha512"
+  ],
   "logs": []
 }

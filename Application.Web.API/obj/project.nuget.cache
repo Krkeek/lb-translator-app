@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "B2MdMnfNnf8=",
+  "dgSpecHash": "WDAr3ooGt18=",
   "success": true,
   "projectFilePath": "/Users/ahmadhiazi/RiderProjects/lb-translator/Application.Web.API/Application.Web.API.csproj",
   "expectedPackageFiles": [
     "/Users/ahmadhiazi/.nuget/packages/microsoft.aspnetcore.openapi/9.0.5/microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
-    "/Users/ahmadhiazi/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "/Users/ahmadhiazi/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/Users/ahmadhiazi/.nuget/packages/stylecop.analyzers/1.2.0-beta.556/stylecop.analyzers.1.2.0-beta.556.nupkg.sha512",
+    "/Users/ahmadhiazi/.nuget/packages/stylecop.analyzers.unstable/1.2.0.556/stylecop.analyzers.unstable.1.2.0.556.nupkg.sha512"
   ],
   "logs": []
 }

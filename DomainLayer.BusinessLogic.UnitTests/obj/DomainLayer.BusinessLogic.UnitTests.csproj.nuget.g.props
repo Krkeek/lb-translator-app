@@ -21,5 +21,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/ahmadhiazi/.nuget/packages/xunit.analyzers/1.16.0</Pkgxunit_analyzers>
+    <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">/Users/ahmadhiazi/.nuget/packages/stylecop.analyzers.unstable/1.2.0.556</PkgStyleCop_Analyzers_Unstable>
   </PropertyGroup>
 </Project>
