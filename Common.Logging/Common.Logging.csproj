@@ -6,4 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Attibutes\" />
+      <Folder Include="Enums\" />
+      <Folder Include="Extensions\" />
+    </ItemGroup>
+
 </Project>

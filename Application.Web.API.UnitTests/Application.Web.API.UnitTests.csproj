@@ -25,4 +25,9 @@
       <ProjectReference Include="..\DomainLayer.BusinessLogic\DomainLayer.BusinessLogic.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Infrastructure\" />
+      <Folder Include="Specs\" />
+    </ItemGroup>
+
 </Project>

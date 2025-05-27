@@ -16,4 +16,9 @@
       <ProjectReference Include="..\DomainLayer.BusinessLogic\DomainLayer.BusinessLogic.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+      <Folder Include="Infrastructure\" />
+    </ItemGroup>
+
 </Project>

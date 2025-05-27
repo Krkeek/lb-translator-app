@@ -23,4 +23,8 @@
       <ProjectReference Include="..\Common.Testing\Common.Testing.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Specs\" />
+    </ItemGroup>
+
 </Project>

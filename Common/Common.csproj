@@ -10,4 +10,10 @@
       <ProjectReference Include="..\Common.Interface\Common.Interface.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="BaseClasses\" />
+      <Folder Include="Delegates\" />
+      <Folder Include="Utilities\" />
+    </ItemGroup>
+
 </Project>
