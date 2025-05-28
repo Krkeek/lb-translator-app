@@ -27,3 +27,7 @@ obj/
 *.pdb
 *.nupkg
 *.snupkg
+
+# Test coverage artifacts
+*.msCoverageSourceRootsMapping_*
+CoverletSourceRootsMapping_*
