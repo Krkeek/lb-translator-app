@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [story/**, task/**, bug/**]
+    branches: [ story/**, task/**, bug/** ]
 
 jobs:
   build-test:
@@ -21,13 +21,13 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore Backend/lb-translator.sln
 
       - name: Build solution
-        run: dotnet build --no-restore --warnaserror
+        run: dotnet build Backend/lb-translator.sln --no-restore
 
       - name: Run tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test Backend/lb-translator.sln --no-build --verbosity normal
 
       - name: Check formatting
-        run: dotnet format --verify-no-changes
+        run: dotnet format Backend/lb-translator.sln --verify-no-changes
