@@ -35,7 +35,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Entites\" />
       <Folder Include="Infrastructure\" />
       <Folder Include="Mapping\" />
     </ItemGroup>
