@@ -24,10 +24,12 @@ jobs:
         run: dotnet restore Backend/ASP.Core.sln
 
       - name: Build solution
-        run: dotnet build Backend/ASP.Core.sln --no-restore
+        run: dotnet build Backend/ASP.Core.sln --no-restore -warnaserror
 
       - name: Run tests
         run: dotnet test Backend/ASP.Core.sln --no-build --verbosity normal
 
       - name: Check formatting
         run: dotnet format Backend/ASP.Core.sln --verify-no-changes
+
+
