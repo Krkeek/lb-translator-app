@@ -27,7 +27,8 @@ jobs:
         run: dotnet build Backend/ASP.Core.sln --no-restore --configuration Release
 
       - name: Run all tests
-        run: dotnet test Backend/ASP.Core.sln --no-build --logger "trx;LogFileName=test-results.trx" --configuration Release
+        run: dotnet test Backend/ASP.Core.sln --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" --configuration Release
+
 
       - name: Upload test results
         if: always()
