@@ -24,18 +24,10 @@ jobs:
         run: dotnet restore Backend/ASP.Core.sln
 
       - name: Build solution
-        run: dotnet build Backend/ASP.Core.sln --no-restore --configuration Release
+        run: dotnet build Backend/ASP.Core.sln --no-restore
 
-      - name: Run all tests
-        run: dotnet test Backend/ASP.Core.sln --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" --configuration Release
+      - name: Run tests
+        run: dotnet test Backend/ASP.Core.sln --no-build --verbosity normal
 
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: '**/TestResults/*.trx'
-
-      - name: Check code formatting
-        run: dotnet format Backend/ASP.Core.sln --verify-no-changes --verbosity diagnostic
+      - name: Check formatting
+        run: dotnet format Backend/ASP.Core.sln --verify-no-changes
