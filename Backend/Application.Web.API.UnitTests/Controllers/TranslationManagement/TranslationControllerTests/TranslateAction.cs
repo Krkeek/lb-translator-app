@@ -3,7 +3,7 @@ namespace Application.Web.API.UnitTests.Controllers.TranslationManagement.Transl
 using System.Net.Http.Json;
 using Common.Contracts.TranslationManagement;
 using Common.Interface.Enums;
-using DomainLayer.BusinessLogic.Infrastructure;
+using DomainLayer.BusinessLogic.Infrastructure.Responses;
 using DomainLayer.BusinessLogic.TranslationManagement.QueryHandlers;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Moq;

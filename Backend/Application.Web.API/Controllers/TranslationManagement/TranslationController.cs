@@ -1,5 +1,6 @@
 namespace Application.Web.API.Controllers.TranslationManagement;
 
+using Application.Web.API.Infrastructure;
 using Common.Contracts.TranslationManagement;
 using DomainLayer.BusinessLogic.TranslationManagement.QueryHandlers;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,6 @@ public class TranslationController : ControllerBase
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(translationDto.ToString());
         var response = await queryHandler.Execute(translationDto, cancellationToken);
-        return this.Ok(response.Data);
+        return response.ToActionResult();
     }
 }
