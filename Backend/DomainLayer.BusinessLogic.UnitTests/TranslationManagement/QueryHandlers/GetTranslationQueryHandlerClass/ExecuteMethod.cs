@@ -45,10 +45,6 @@ public class ExecuteMethod
 
         // Assert
         Assert.NotNull(response);
-        Assert.Equal(expectedDto.OriginalText, result.OriginalText);
-        Assert.Equal(expectedDto.TranslatedText, result.TranslatedText);
-        Assert.Equal(expectedDto.SourceLanguage, result.SourceLanguage);
-        Assert.Equal(expectedDto.TargetLanguage, result.TargetLanguage);
-        Assert.Equal(expectedDto.Provider, result.Provider);
+        Assert.Equivalent(expectedDto, result);
     }
 }

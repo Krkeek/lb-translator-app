@@ -1,7 +1,7 @@
 namespace DomainLayer.BusinessLogic.TranslationManagement.QueryHandlers;
 
 using Common.Contracts.TranslationManagement;
-using DomainLayer.BusinessLogic.Infrastructure;
+using DomainLayer.BusinessLogic.Infrastructure.Responses;
 using DomainLayer.BusinessLogic.TranslationManagement.Services;
 
 /// <inheritdoc />

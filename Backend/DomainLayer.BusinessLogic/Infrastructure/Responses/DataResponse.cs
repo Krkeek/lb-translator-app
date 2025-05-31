@@ -1,4 +1,4 @@
-namespace DomainLayer.BusinessLogic.Infrastructure;
+namespace DomainLayer.BusinessLogic.Infrastructure.Responses;
 
 /// <summary>
 /// Wraps a data result in a response object.
