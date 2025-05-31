@@ -16,49 +16,47 @@ public static class ResponseExtensions
     /// <returns>converted ActionResult.</returns>
     public static ActionResult<T> ToActionResult<T>(this DataResponse<T> response)
     {
-    ArgumentNullException.ThrowIfNull(response);
-    return new OkObjectResult(response.Data);
+        ArgumentNullException.ThrowIfNull(response);
+        return new OkObjectResult(response.Data);
     }
 
-        /// <summary>
-        /// Extension for the query response.
-        /// </summary>
-        /// <typeparam name="T">type of the data response.</typeparam>
-        /// <param name="response">response to convert to ActionResult.</param>
-        /// <returns>converted ActionResult.</returns>
+    /// <summary>
+    /// Extension for the query response.
+    /// </summary>
+    /// <typeparam name="T">type of the data response.</typeparam>
+    /// <param name="response">response to convert to ActionResult.</param>
+    /// <returns>converted ActionResult.</returns>
     public static ActionResult<T> ToActionResult<T>(this NullableDataResponse<T> response)
-        {
-            ArgumentNullException.ThrowIfNull(response);
+    {
+        ArgumentNullException.ThrowIfNull(response);
 
-            if (response.Data is null)
-            {
-                return new NoContentResult();
-            }
-            else
-            {
-                return new OkObjectResult(response.Data);
-            }
-        }
-
-        /// <summary>
-        /// Extension for the query response.
-        /// </summary>
-        /// <param name="response">response to convert to ActionResult.</param>
-        /// <returns>converted ActionResult.</returns>
-    public static ActionResult ToActionResult(this EmptyResponse response)
+        if (response.Data is null)
         {
-            ArgumentNullException.ThrowIfNull(response);
-            return new OkResult();
-        }
-
-        /// <summary>
-        /// Extension for the query response.
-        /// </summary>
-        /// <param name="response">response to convert to ActionResult.</param>
-        /// <returns>converted ActionResult.</returns>
-    public static ActionResult ToActionResult(this NoContentResponse response)
-        {
-            ArgumentNullException.ThrowIfNull(response);
             return new NoContentResult();
         }
+
+        return new OkObjectResult(response.Data);
+    }
+
+    /// <summary>
+    /// Extension for the query response.
+    /// </summary>
+    /// <param name="response">response to convert to ActionResult.</param>
+    /// <returns>converted ActionResult.</returns>
+    public static ActionResult ToActionResult(this EmptyResponse response)
+    {
+        ArgumentNullException.ThrowIfNull(response);
+        return new OkResult();
+    }
+
+    /// <summary>
+    /// Extension for the query response.
+    /// </summary>
+    /// <param name="response">response to convert to ActionResult.</param>
+    /// <returns>converted ActionResult.</returns>
+    public static ActionResult ToActionResult(this NoContentResponse response)
+    {
+        ArgumentNullException.ThrowIfNull(response);
+        return new NoContentResult();
+    }
 }
