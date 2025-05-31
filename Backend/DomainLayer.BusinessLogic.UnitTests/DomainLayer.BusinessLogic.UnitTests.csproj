@@ -6,13 +6,15 @@
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-        <NoWarn>$(NoWarn);SA1633</NoWarn>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);SA1600;SA0001</NoWarn>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.5" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -32,6 +34,10 @@
       <ProjectReference Include="..\Common\Common.csproj" />
       <ProjectReference Include="..\DomainLayer.BusinessLogic\DomainLayer.BusinessLogic.csproj" />
       <ProjectReference Include="..\PersistenceLayer.DataAccess\PersistenceLayer.DataAccess.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EditorConfigFiles Remove=".editorconfig" />
     </ItemGroup>
 
 </Project>
