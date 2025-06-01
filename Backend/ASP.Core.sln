@@ -28,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenceLayer.DataAccess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenceLayer.DataAccess.IntegrationTests", "PersistenceLayer.DataAccess.IntegrationTests\PersistenceLayer.DataAccess.IntegrationTests.csproj", "{ADC450ED-B512-47A4-A9C0-80E5C24C8662}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.CommandLine", "Application.CommandLine\Application.CommandLine.csproj", "{F7170F81-DC78-497D-838E-7EDB86B8EE70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Commandline.UnitTests", "Application.Commandline.UnitTests\Application.Commandline.UnitTests.csproj", "{7595A682-3ABC-4D89-8C0F-C11DEA6C0764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +94,13 @@ Global
 		{ADC450ED-B512-47A4-A9C0-80E5C24C8662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADC450ED-B512-47A4-A9C0-80E5C24C8662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADC450ED-B512-47A4-A9C0-80E5C24C8662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7170F81-DC78-497D-838E-7EDB86B8EE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7170F81-DC78-497D-838E-7EDB86B8EE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7170F81-DC78-497D-838E-7EDB86B8EE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7170F81-DC78-497D-838E-7EDB86B8EE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7595A682-3ABC-4D89-8C0F-C11DEA6C0764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7595A682-3ABC-4D89-8C0F-C11DEA6C0764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7595A682-3ABC-4D89-8C0F-C11DEA6C0764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7595A682-3ABC-4D89-8C0F-C11DEA6C0764}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

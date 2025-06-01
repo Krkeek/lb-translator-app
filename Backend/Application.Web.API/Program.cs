@@ -5,7 +5,7 @@ using Application.Web.API.Configuration;
 /// <summary>
 /// Program.
 /// </summary>
-public partial class Program
+public class Program
 {
     /// <summary>
     /// Main Method.
@@ -15,19 +15,20 @@ public partial class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddOpenApi();
-        builder.Services.AddApplicationServices();
+        builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        builder.Services.AddControllers();
+        builder.Services.AddOpenApi();
+        builder.Services.AddDatabase(builder.Configuration);
+        builder.Services.AddApplicationServices();
 
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
         {
-            app.MapOpenApi();
             app.UseSwagger();
             app.UseSwaggerUI();
+            app.MapOpenApi();
         }
 
         app.UseHttpsRedirection();
