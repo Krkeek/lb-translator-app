@@ -2,7 +2,7 @@ name: Build and Test
 
 on:
   push:
-    branches: [ story/**, task/**, bug/** ]
+    branches: [ User-story/**, Task/**, Bug/** ]
 
 jobs:
   build-test:
