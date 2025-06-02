@@ -1,6 +1,7 @@
 ## Build artifacts
 bin/
 obj/
+publish/
 
 # Generated files
 *.AssemblyInfo.cs

@@ -36,7 +36,17 @@
 
     <ItemGroup>
       <Folder Include="Infrastructure\" />
-      <Folder Include="Mapping\" />
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\20250601005810_InitialCreate.cs" />
+      <Compile Remove="Migrations\20250601005810_InitialCreate.Designer.cs" />
+      <Compile Remove="Migrations\AppDbContextModelSnapshot.cs" />
+      <Compile Remove="Migrations\20250601011339_InitialCreate.Designer.cs" />
+      <Compile Remove="Migrations\20250601215734_InitialCreate.Designer.cs" />
+      <Compile Remove="Migrations\20250601220544_InitialCreate.cs" />
+      <Compile Remove="Migrations\20250601220544_InitialCreate.Designer.cs" />
     </ItemGroup>
 
 </Project>

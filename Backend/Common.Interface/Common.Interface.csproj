@@ -16,7 +16,6 @@
       <Folder Include="Identity\" />
       <Folder Include="Infrastructure\" />
       <Folder Include="Interfaces\" />
-      <Folder Include="Models\" />
     </ItemGroup>
 
     <ItemGroup>
